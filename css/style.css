@@ -48,6 +48,17 @@ footer ul li {
   color: #fff;
 }
 
+/*Knappene*/
+.yellow-button {
+  background-color: #e6bd43;
+  padding: 0.5rem;
+}
+
+.black-white-button {
+  border: solid #000;
+  padding: 0.5rem;
+}
+
 #index-grid {
   grid-template-areas: "header" "main" "footer";
   display: grid;
