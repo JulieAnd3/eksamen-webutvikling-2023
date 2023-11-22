@@ -1,1 +1,61 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+}
+
+/*Farger*/
+/*Felles css for nav og footer*/
+header {
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  align-items: baseline;
+}
+header nav ul li {
+  margin: 0.5rem;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  align-items: baseline;
+  background-color: #000;
+}
+footer span img {
+  max-width: 5rem;
+  margin: 0.5rem;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+footer ul {
+  display: flex;
+  align-items: baseline;
+}
+footer ul li {
+  margin: 0.5rem;
+}
+
+/*Ikonene*/
+.ikon {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+}
+
+#index-grid {
+  grid-template-areas: "header" "main" "footer";
+  display: grid;
+}
+#index-grid header {
+  grid-area: "header";
+}
+#index-grid header article {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

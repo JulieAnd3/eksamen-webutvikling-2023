@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Farger*/
+$gul:#e6bd43;
+$graa:#252525;
+
+/*Felles css for nav og footer*/
+header{
+    display:flex;
+    nav{
+        ul{
+            display:flex;
+            align-items:baseline;
+            li{
+                margin:0.5rem;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+footer{
+    display:flex;
+    align-items:baseline;
+    background-color:#000;
+    span{
+        img{
+            max-width:5rem;
+            margin:0.5rem,
+        }
+    }
+    p{
+        display:flex;
+        justify-content:center;
+        color:#ffff;
+    }
+    ul{
+        display:flex;
+        align-items:baseline;
+        li{
+            margin:0.5rem;
+        }
+    }
+}
+
+/*Ikonene*/
+.ikon{
+    text-decoration:none;
+    background-color:#000;
+    color:#fff; 
+}
+
+
+
+
+
+#index-grid{
+    grid-template-areas: "header" "main" "footer";
+    display:grid;
+    header{
+        grid-area:"header";
+        article{
+            display:flex;
+            justify-content:center;
+        }
+    }
+}
