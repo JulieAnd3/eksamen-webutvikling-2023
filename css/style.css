@@ -7,31 +7,33 @@
 header {
   display: flex;
   flex-direction: column;
+  min-width: 200px;
 }
 header nav {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 header nav span img {
-  max-width: 140px;
+  max-width: 80px;
 }
 header nav ul {
   display: flex;
-  align-items: baseline;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 header nav ul li {
   margin: 0.5rem;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  min-width: 39px;
 }
 
 footer {
   display: flex;
-  align-items: baseline;
   background-color: #252525;
+  justify-content: space-between;
 }
 footer span img {
   max-width: 5rem;
@@ -39,7 +41,7 @@ footer span img {
 }
 footer p {
   display: flex;
-  justify-content: center;
+  text-align: center;
   color: white;
 }
 footer ul {
@@ -48,11 +50,39 @@ footer ul {
 }
 footer ul li {
   margin: 0.5rem;
+  list-style: none;
+  font-size: 35px;
+}
+
+/*Our services for index og about*/
+#our-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+#our-services h3 {
+  margin: 1rem;
+}
+#our-services #article-kort {
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+}
+#our-services #article-kort article {
+  text-align: center;
+  max-width: 300px;
+}
+#our-services #article-kort article i {
+  font-size: 40px;
 }
 
 /*Fikse alle linkene*/
 a {
   text-decoration: none;
+  color: #000;
 }
 
 /*Ikonene*/
@@ -97,6 +127,10 @@ a {
 #index-grid header article p {
   color: #fff;
 }
+#index-grid header article h1 {
+  color: #fff;
+  font-size: 28px;
+}
 #index-grid main {
   grid-area: "main";
 }
@@ -112,25 +146,16 @@ a {
   border: solid #000;
   padding: 0.5rem;
   display: flex;
-}
-#index-grid main #our-services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem;
-}
-#index-grid main #our-services h3 {
-  margin: 1rem;
-}
-#index-grid main #our-services #article-kort {
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: baseline;
-  align-content: space-evenly;
-  display: flex;
-  flex-direction: row;
 }
-#index-grid main #our-services #article-kort article {
-  text-align: center;
+#index-grid main #introduskjon article img {
+  max-width: 300px;
+  margin: 0.5rem;
+}
+#index-grid main #introduskjon article div {
+  flex-direction: column;
+  margin: 0.5rem;
   max-width: 300px;
 }
 #index-grid main #newsletter {
@@ -141,4 +166,39 @@ a {
 }
 #index-grid main #newsletter form {
   margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 800px) {
+  /*Felles css for nav og footer*/
+  header {
+    display: flex;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  header nav ul {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  header nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer p {
+    display: flex;
+    text-align: center;
+  }
+  footer ul {
+    display: flex;
+    align-items: baseline;
+  }
 }/*# sourceMappingURL=style.css.map */
