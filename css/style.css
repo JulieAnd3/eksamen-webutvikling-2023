@@ -1,9 +1,17 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
 
 /*Farger*/
-/*Felles css for nav og footer*/
+/*Felles body*/
+body {
+  grid-template-areas: "header" "main" "footer";
+  display: grid;
+  margin: 0;
+}
+
+/*Felles css for header og footer*/
 header {
   display: flex;
   flex-direction: column;
@@ -33,7 +41,9 @@ header nav ul li {
 footer {
   display: flex;
   background-color: #252525;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 footer span img {
   max-width: 5rem;
@@ -100,14 +110,11 @@ a {
 
 .black-white-button {
   border: solid #000;
+  border-width: 0.1rem;
   padding: 0.5rem;
 }
 
 /*Index/forsiden*/
-#index-grid {
-  grid-template-areas: "header" "main" "footer";
-  display: grid;
-}
 #index-grid header {
   grid-area: "header";
   display: flex;
@@ -117,7 +124,7 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url("../img/mountain-8063349_1280.png"); /*Fant ut hvordan navigere mappene med .. ved bruk av kilde 6*/
+  background-image: url("../img/fjell-index.png"); /*Fant ut hvordan navigere mappene med .. ved bruk av kilde 6*/
   /*Bilde er tatt fra kilde 2*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,18 +143,18 @@ a {
 }
 #index-grid main #introduskjon h2 {
   display: flex;
-  justify-content: center;
+  text-align: center;
 }
 #index-grid main #introduskjon p {
   display: flex;
-  justify-content: center;
+  text-align: center;
 }
 #index-grid main #introduskjon article {
   border: solid #000;
   padding: 0.5rem;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 #index-grid main #introduskjon article img {
   max-width: 300px;
@@ -157,6 +164,7 @@ a {
   flex-direction: column;
   margin: 0.5rem;
   max-width: 300px;
+  text-align: center;
 }
 #index-grid main #newsletter {
   background-color: #D9D9D9;
@@ -166,6 +174,70 @@ a {
 }
 #index-grid main #newsletter form {
   margin-bottom: 0.5rem;
+}
+
+#portofolio-grid header article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/fjell-porto.png);
+  /*Bilde er tatt fra kilde 3*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+#portofolio-grid header article h1 {
+  font-size: 28px;
+}
+#portofolio-grid main #explore {
+  margin: 0.5rem;
+}
+#portofolio-grid main #explore h3 {
+  border-bottom: solid #e6bd43;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 28px;
+}
+#portofolio-grid main #explore article {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+#portofolio-grid main #explore article a {
+  margin: 0.5rem;
+}
+#portofolio-grid main .porto-innhold { /*Hehe overflow dreit. Orker ikke nå*/
+  margin: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+#portofolio-grid main .porto-innhold h3 {
+  border-bottom: solid #e6bd43;
+  font-size: 28px;
+}
+#portofolio-grid main .porto-innhold div {
+  display: flex;
+  flex-wrap: flex;
+}
+#portofolio-grid main .porto-innhold div article {
+  margin: 1rem;
+}
+
+#about-grid header {
+  display: grid;
+  grid-area: "header";
+}
+#about-grid header div {
+  background-image: url(../img/fjell-about.jpg);
+  /*Bilde er tatt fra kilde 3*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#about-grid header div article {
+  background-color: #D9D9D9;
+  width: 50%;
+  margin: 0.5rem;
 }
 
 @media only screen and (min-width: 800px) {
