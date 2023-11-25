@@ -149,6 +149,7 @@ a{
     main{
         grid-area:"main";
         #introduskjon{
+            margin:0.5rem;
             h2{
                 display:flex;
                 text-align:center;
@@ -261,7 +262,7 @@ a{
             background-repeat: no-repeat;
             background-size:cover;
             display:flex;
-            justify-content:center;
+            justify-content:center
             article{
                 background-color:#D9D9D9B2;
                 /*Brukte Figma sin develepor modus til å finne passende fargekode*/
@@ -300,6 +301,13 @@ a{
         }
         #contact{
             background-color:$lysgraa;
+
+            h3{
+                margin:0.5rem;
+            }
+            h4{
+                margin:0.5rem;
+            }
             form{
                 display:flex;
                 flex-direction:column;
