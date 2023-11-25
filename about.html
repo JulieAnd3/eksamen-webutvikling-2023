@@ -29,11 +29,11 @@
                 <li><a href="about.html#contact" class="yellow-button">Contact</a></li> 
             </ul>
         </nav>
-        <div>
+        <div id="about-our-company">
             <article>
                 <p>Company name</p>
                 <h1>About Our Company</h1>
-                <p>Proin vestibulum justo non rutrum maximus. Donec quis molestie neque. In hac habitasse platea dictumst. Ut at leo pulvinar, mollis sem eget, iaculis odio. Curabitur sagittis metus metus, vitae semper velit luctus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sed erat id massa egestas dapibus quis eget lorem. In dignissim, arcu non porttitor pellentesque, velit metus pretium turpis, id imperdiet mi nisl a velit. </p>
+                <p>Proin vestibulum justo non rutrum maximus. Donec quis molestie neque. In hac habitasse platea dictumst. Ut at leo pulvinar, mollis sem eget, iaculis odio. Curabitur sagittis metus metus, vitae semper velit luctus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sed erat id massa egestas dapibus quis eget lorem.</p>
                 <!--Fra kilde 5-->
                 <a href="#" class="yellow-button">Get in touch with us</a> 
             </article>
@@ -42,41 +42,45 @@
     <main>
         <section id="our-services"> 
             <h3>Our services</h3>
-            <article>
-                <h4>Branding</h4>
-                <i class="fa-solid fa-people-group"></i>
-                <!--Fra kilde 1-->
-               <p>Mauris condimentum semper purus, at pharetra nisi consectetur et. </p>
-               <!--Fra kilde 5-->
-            </article>
-            <article>
-                <h4>Design</h4>
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-                <!--Fra kilde 1-->
+            <div id="article-kort">
+                <article>
+                    <h4>Branding</h4>
+                    <i class="fa-solid fa-people-group"></i>
+                    <!--Fra kilde 1-->
                 <p>Mauris condimentum semper purus, at pharetra nisi consectetur et. </p>
                 <!--Fra kilde 5-->
-            </article>
-            <article>
-                <h4>Development</h4>
-                <i class="fa-solid fa-code"></i>
-                <!--Fra kilde 1-->
-                <p>Mauris condimentum semper purus, at pharetra nisi consectetur et. </p>
-                <!--Fra kilde 5-->
-            </article>
-            <article>
-                <h4>Support</h4>
-                <i class="fa-solid fa-wifi"></i>
-                <!--Fra kilde 1-->
-                <p>Mauris condimentum semper purus, at pharetra nisi consectetur et. </p>
-                <!--Fra kilde 5-->
-            </article>
+                </article>
+                <article>
+                    <h4>Design</h4>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <!--Fra kilde 1-->
+                    <p>Mauris condimentum semper purus, at pharetra nisi consectetur et. </p>
+                    <!--Fra kilde 5-->
+                </article>
+                <article>
+                    <h4>Development</h4>
+                    <i class="fa-solid fa-code"></i>
+                    <!--Fra kilde 1-->
+                    <p>Mauris condimentum semper purus, at pharetra nisi consectetur et. </p>
+                    <!--Fra kilde 5-->
+                </article>
+                <article>
+                    <h4>Support</h4>
+                    <i class="fa-solid fa-wifi"></i>
+                    <!--Fra kilde 1-->
+                    <p>Mauris condimentum semper purus, at pharetra nisi consectetur et. </p>
+                    <!--Fra kilde 5-->
+                </article>
+            </div>
         </section>
-        <section>
+        <section id="our-clients">
             <h3>Some of our clients</h3>
-            <img src="img/hoved-logo.png" alt="logo til kunden camping AS">
-            <img src="img/logo2.png" alt="logo til kunden matematikk sentralen">
-            <img src="img/logo3.png" alt="logo til kunden Nca klær">
-            <!--Husk å skrive kilde til disse-->
+            <div id="logo-bilder"> 
+                <img src="img/hoved-logo.png" alt="logo til kunden camping AS">
+                <img src="img/logo2.png" alt="logo til kunden matematikk sentralen">
+                <img src="img/logo3.png" alt="logo til kunden Nca klær">
+                <!--Husk å skrive kilde til disse-->
+            </div>
         </section>
         <section id="contact">
             <h3>Contact us</h3>
@@ -93,24 +97,24 @@
                     </label>
                     <label>
                         Message
-                        <input type="text" name="message">
+                        <input type="text" name="message" id="message">
                     </label>
-                    <input type="submit" value="contact-us-message" class="yellow-button">
+                    <input type="submit" value="Send message" class="yellow-button" id="send-message">
                 </form>
             </article>
-            <article>
+            <article id="contact-info">
                 <h4>Contact information</h4>
                 <p>Proin auctor odio non dui viverra dapibus. Integer congue sagittis augue, vitae iaculis dolor sodales non. Mauris mattis massa quis ligula auctor lacinia. Nullam dapibus risus dui, nec posuere sapien pharetra id.</p>
                 <!--Fra kilde 5-->
                 <i class="fa-solid fa-location-pin"></i>
                 <!--Fra kilde 1-->
-                <p>B R A veien 4, 1757 Halden</p>
+                <p class="contact-p">B R A veien 4, 1757 Halden</p>
                 <i class="fa-solid fa-phone"></i>
                 <!--Fra kilde 1-->
-                <p>69 60 80 00</p>
+                <p class="contact-p">69 60 80 00</p>
                 <i class="fa-solid fa-envelope"></i>
                 <!--Fra kilde 1-->
-                <p>postmottak@hiof.no</p>
+                <p class="contact-p">postmottak@hiof.no</p>
                 <!--Sett inn fungerende kart her-->
             </article>
         </section>
