@@ -44,6 +44,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  grid-area: "footer";
 }
 footer span img {
   max-width: 5rem;
@@ -225,14 +226,9 @@ a {
   flex-wrap: wrap;
 }
 #portofolio-grid .porto-innhold .ok article {
-  margin: 1rem;
-}
-#portofolio-grid .porto-innhold .ok article img {
-  max-width: 300px;
-  margin: 0.5rem;
-}
-#portofolio-grid .porto-innhold .ok article p {
-  max-width: 300px;
+  margin: 2rem;
+  max-width: 350px;
+  min-width: 200px;
 }
 
 #about-grid header {
@@ -335,15 +331,36 @@ a {
     justify-content: end;
   }
   footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: "footer1 footer2 footer3";
+  }
+  footer span {
+    grid-area: "footer1";
   }
   footer p {
-    display: flex;
-    text-align: center;
+    grid-area: "footer2";
+    justify-self: center;
   }
   footer ul {
+    grid-area: "footer3";
     display: flex;
-    align-items: baseline;
+    justify-self: center;
+  }
+  /*Our services for index og about*/
+  #our-services #article-kort {
+    display: grid;
+    grid-template-areas: "1 2 3 4";
+  }
+  #our-services #article-kort #one {
+    grid-area: "1";
+  }
+  #our-services #article-kort #two {
+    grid-area: "2";
+  }
+  #our-services #article-kort #three {
+    grid-area: "3";
+  }
+  #our-services #article-kort #four {
+    grid-area: "4";
   }
 }/*# sourceMappingURL=style.css.map */
