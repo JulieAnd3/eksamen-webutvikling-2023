@@ -231,7 +231,7 @@ a {
   min-width: 200px;
 }
 
-#about-grid header {
+#about-grid header { /*Hvorfor har den blitt rar her?*/
   display: grid;
   grid-area: "header";
 }
@@ -311,9 +311,6 @@ a {
 
 @media only screen and (min-width: 800px) {
   /*Felles css for nav og footer*/
-  header {
-    display: flex;
-  }
   header nav {
     display: flex;
     justify-content: space-between;
@@ -344,7 +341,8 @@ a {
   footer ul {
     grid-area: "footer3";
     display: flex;
-    justify-self: center;
+    justify-self: end;
+    margin: 0.5rem;
   }
   /*Our services for index og about*/
   #our-services #article-kort {
@@ -362,5 +360,47 @@ a {
   }
   #our-services #article-kort #four {
     grid-area: "4";
+  }
+  #portofolio-grid {
+    width: 100%;
+    max-width: 1600px;
+  }
+  #portofolio-grid header {
+    display: grid;
+    grid-template-areas: "header" "uheader";
+  }
+  #portofolio-grid header nav {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "nav1 nav2";
+  }
+  #portofolio-grid header nav span {
+    grid-area: nav1;
+  }
+  #portofolio-grid header nav ul {
+    grid-area: nav2;
+  }
+  #portofolio-grid header article {
+    grid-area: uheader;
+  }
+  #about-grid header {
+    display: grid;
+    grid-template-areas: "header" "uheader";
+  }
+  #about-grid header nav {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "nav1 nav2";
+  }
+  #about-grid header nav span {
+    grid-area: nav1;
+  }
+  #about-grid header nav ul {
+    grid-area: nav2;
+  }
+  #about-grid header #about-our-company {
+    grid-area: uheader;
+    display: flex;
+    justify-content: end;
   }
 }/*# sourceMappingURL=style.css.map */

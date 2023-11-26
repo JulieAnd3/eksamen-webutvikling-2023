@@ -248,7 +248,7 @@ a{
     }
 }
 #about-grid{
-    header{
+    header{ /*Hvorfor har den blitt rar her?*/
         display:grid;
         grid-area: "header";
         #about-our-company{
@@ -335,7 +335,6 @@ a{
 @media only screen and (min-width:800px){
 /*Felles css for nav og footer*/
     header{
-        display:flex;
         nav{
             display:flex;
             justify-content:space-between;
@@ -366,7 +365,8 @@ a{
         ul{
             grid-area:"footer3";
             display:flex;
-            justify-self:center;
+            justify-self:end;
+            margin:0.5rem;
         }
     }
 /*Our services for index og about*/
@@ -390,8 +390,53 @@ a{
     
     }
 }
+#portofolio-grid{
+    width:100%; max-width:1600px;
+header{
+    display:grid;
+    grid-template-areas: "header" "uheader";
+    nav{
+        grid-area:header;
+        display:grid;
+        grid-template-areas: "nav1 nav2";
+        span{
+            grid-area: nav1;
+        }
+        ul{
+            grid-area:nav2;
+        }
 
+    }
+    article{
+        grid-area:uheader;
+    }
 
+} 
+}
+#about-grid{
+    header{
+        display:grid;
+        grid-template-areas: "header" "uheader";
+        nav{
+            grid-area:header;
+            display:grid;
+            grid-template-areas: "nav1 nav2";
+            span{
+                grid-area: nav1;
+            }
+            ul{
+                grid-area:nav2;
+            }
+    
+        }
+        #about-our-company{
+            grid-area:uheader;
+            display:flex;
+            justify-content: end;
+        }
+    
+    } 
+}
 
 
 
