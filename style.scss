@@ -257,7 +257,7 @@ a{
             background-repeat: no-repeat;
             background-size:cover;
             display:flex;
-            justify-content:center
+            justify-content:center;
             article{
                 background-color:#D9D9D9B2;
                 /*Brukte Figma sin develepor modus til å finne passende fargekode*/
@@ -413,7 +413,8 @@ header{
 
 } 
 }
-#about-grid{
+#about-grid{ 
+    width:100%; max-width:1600px;
     header{
         display:grid;
         grid-template-areas: "header" "uheader";
@@ -432,10 +433,33 @@ header{
         #about-our-company{
             grid-area:uheader;
             display:flex;
-            justify-content: end;
+            justify-content:end;
+            height:350px;
+
+            article{
+                margin: 3rem;
+                width:40%;
+                height:80%;
+            }
         }
     
     } 
+    #contact{
+        display:grid;
+        grid-template-areas:"overskrift overskrift" "message contact";
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr;
+        h3{
+            grid-area:overskrift;
+            justify-self:center;
+        }
+        #send-us-m{
+            grid-area:message;
+        }
+        #contact-info{
+            grid-area:contact;
+        }
+    }
 }
 
 

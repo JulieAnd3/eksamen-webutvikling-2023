@@ -241,15 +241,16 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  justify-content: center;
 }
-#about-grid header #about-our-company justify-content:center article {
+#about-grid header #about-our-company article {
   background-color: rgba(217, 217, 217, 0.6980392157);
   /*Brukte Figma sin develepor modus til å finne passende fargekode*/
   width: 60%;
   margin: 0.5rem;
   padding: 1rem;
 }
-#about-grid header #about-our-company justify-content:center article a {
+#about-grid header #about-our-company article a {
   margin: 0.5rem;
   padding: 0.5rem;
 }
@@ -383,6 +384,10 @@ a {
   #portofolio-grid header article {
     grid-area: uheader;
   }
+  #about-grid {
+    width: 100%;
+    max-width: 1600px;
+  }
   #about-grid header {
     display: grid;
     grid-template-areas: "header" "uheader";
@@ -402,5 +407,27 @@ a {
     grid-area: uheader;
     display: flex;
     justify-content: end;
+    height: 350px;
+  }
+  #about-grid header #about-our-company article {
+    margin: 3rem;
+    width: 40%;
+    height: 80%;
+  }
+  #about-grid #contact {
+    display: grid;
+    grid-template-areas: "overskrift overskrift" "message contact";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  #about-grid #contact h3 {
+    grid-area: overskrift;
+    justify-self: center;
+  }
+  #about-grid #contact #send-us-m {
+    grid-area: message;
+  }
+  #about-grid #contact #contact-info {
+    grid-area: contact;
   }
 }/*# sourceMappingURL=style.css.map */
