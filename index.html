@@ -17,15 +17,15 @@
 </head>
 <body>
     <div id="index-grid">
-    <header>
+    <header id="header">
         <nav>
             <span>
                 <a href="index.html"><img src="img/hoved-logo.png" alt="Logo.Trykk for å komme til hovedsiden"></a> 
              </span>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portofolio.html">Portofolio</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="portofolio.html" id="portofolio">Portofolio</a></li>
+                <li><a href="about.html" id="about">About</a></li>
                 <li><a href="about.html#contact" class="yellow-button">Contact</a></li> 
             </ul>
         </nav>
@@ -39,9 +39,9 @@
     <main>
         <section id="introduskjon">
             <h2>Enganging subheading. What can you help your visitros with.</h2>
-            <p>Curabitur sodales enim vitae magna tincidunt, vel sagittis arcu pulvinar. Pellentesque hendrerit convallis mollis. Pellentesque ultricies sagittis mi, sed rutrum metus iaculis nec. Curabitur nulla libero, gravida id mi scelerisque, accumsan commodo enim.</p>
+            <p id="introduksjons-tekst">Curabitur sodales enim vitae magna tincidunt, vel sagittis arcu pulvinar. Pellentesque hendrerit convallis mollis. Pellentesque ultricies sagittis mi, sed rutrum metus iaculis nec. Curabitur nulla libero, gravida id mi scelerisque, accumsan commodo enim.</p>
             <!--Fra kilde 5-->
-            <article>
+            <article id="intro-index">
                 <img src="img/400x400.png" alt="placeholder bilde">
                 <div>
                     <h3>About our company</h3>
@@ -105,6 +105,9 @@
             <!--Alle ikonene er hentet fra fontawsome. Se kilde 1-->
         </ul>
     </footer>
+    <span id="arrow">
+        <a href="#header" id="opp-button"><i class="fa-solid fa-arrow-up"></i></a>
+    </span>
 </div>
 </body>
 </html>

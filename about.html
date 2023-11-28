@@ -17,15 +17,15 @@
 </head>
 <body>
     <div id="about-grid">
-    <header>
+    <header id="header">
         <nav>
             <span>
                 <a href="index.html"><img src="img/hoved-logo.png" alt="Logo.Trykk for å komme til hovedsiden"></a> 
              </span>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portofolio.html">Portofolio</a></li>
-                <li><a href="about.html">About</a></li>
+             <ul>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="portofolio.html" id="portofolio">Portofolio</a></li>
+                <li><a href="about.html" id="about">About</a></li>
                 <li><a href="about.html#contact" class="yellow-button">Contact</a></li> 
             </ul>
         </nav>
@@ -105,18 +105,27 @@
             <article id="contact-info">
                 <h4>Contact information</h4>
                 <p>Proin auctor odio non dui viverra dapibus. Integer congue sagittis augue, vitae iaculis dolor sodales non. Mauris mattis massa quis ligula auctor lacinia. Nullam dapibus risus dui, nec posuere sapien pharetra id.</p>
-                <!--Fra kilde 5-->
-                <i class="fa-solid fa-location-pin"></i>
-                <!--Fra kilde 1-->
-                <p class="contact-p">B R A veien 4, 1757 Halden</p>
-                <i class="fa-solid fa-phone"></i>
-                <!--Fra kilde 1-->
-                <p class="contact-p">69 60 80 00</p>
-                <i class="fa-solid fa-envelope"></i>
-                <!--Fra kilde 1-->
-                <p class="contact-p">postmottak@hiof.no</p>
-                <!--Sett inn fungerende kart her-->
+                <!--Fra kilde 5--> 
+                <article class="contact-info-article">
+                    <i class="fa-solid fa-location-pin contact-ikon"></i>
+                    <!--Fra kilde 1-->
+                    <p>B R A veien 4, 1757 Halden</p>
+                </article>
+                <article class="contact-info-article">
+                    <i class="fa-solid fa-phone contact-ikon"></i>
+                    <!--Fra kilde 1-->
+                    <p>69 60 80 00</p>
+                </article>
+                <article class="contact-info-article">
+                    <i class="fa-solid fa-envelope contact-ikon"></i>
+                    <!--Fra kilde 1-->
+                    <p id="e-post-contact">postmottak@hiof.no</p>
+                    <!--Sett inn fungerende kart her-->
+                </article>
             </article>
+        </section>
+        <section id="kart">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433659!2d11.35022837642635!3d59.12925022702081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1701090972104!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer>
@@ -131,6 +140,9 @@
             <!--Alle ikonene er hentet fra fontawsome. Se kilde 1-->
         </ul>
     </footer>
+    <span id="arrow">
+        <a href="#header" id="opp-button"><i class="fa-solid fa-arrow-up"></i></a>
+    </span>
 </div>
 </body>
 </html>

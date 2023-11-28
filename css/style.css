@@ -22,6 +22,9 @@ header nav {
   flex-direction: column;
   align-items: center;
 }
+header nav span {
+  display: flex;
+}
 header nav span img {
   max-width: 80px;
 }
@@ -29,6 +32,8 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
+  padding: 0rem;
 }
 header nav ul li {
   margin: 0.5rem;
@@ -115,11 +120,32 @@ a {
   padding: 0.5rem;
 }
 
+#arrow {
+  display: flex;
+  justify-content: end;
+}
+#arrow #opp-button {
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  padding: 0.5rem;
+  margin: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  bottom: 0;
+  /*Kilde sett inn tall*/
+}
+
 /*Index/forsiden*/
 #index-grid header {
   grid-area: "header";
   display: flex;
   min-width: 300px;
+}
+#index-grid header #home {
+  font-weight: bold;
+  border-bottom: solid #e6bd43;
 }
 #index-grid header article {
   display: flex;
@@ -180,6 +206,13 @@ a {
   margin-bottom: 0.5rem;
 }
 
+#portofolio-grid {
+  width: 100%;
+}
+#portofolio-grid header #portofolio {
+  font-weight: bold;
+  border-bottom: solid #e6bd43;
+}
 #portofolio-grid header article {
   display: flex;
   flex-wrap: wrap;
@@ -227,13 +260,27 @@ a {
 }
 #portofolio-grid .porto-innhold .ok article {
   margin: 2rem;
-  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   min-width: 200px;
 }
+#portofolio-grid .porto-innhold .ok article img {
+  flex-grow: 1;
+  max-width: 629px;
+}
+#portofolio-grid .porto-innhold .ok article h4 {
+  flex-grow: 1;
+  max-width: 629px;
+}
 
-#about-grid header { /*Hvorfor har den blitt rar her?*/
+#about-grid header {
   display: grid;
   grid-area: "header";
+}
+#about-grid header #about {
+  font-weight: bold;
+  border-bottom: solid #e6bd43;
 }
 #about-grid header #about-our-company {
   background-image: url(../img/fjell-about.jpg);
@@ -309,8 +356,35 @@ a {
   flex-wrap: wrap;
   justify-content: baseline;
 }
+#about-grid main #contact #contact-info .contact-info-article {
+  display: flex;
+  align-items: baseline;
+}
+#about-grid main #contact #contact-info .contact-info-article p {
+  font-size: 16px;
+}
+#about-grid main #contact #contact-info .contact-info-article .contact-ikon {
+  font-size: 24px;
+  margin: 0.5rem;
+}
+#about-grid main #contact #contact-info .contact-info-article #e-post-contact {
+  color: blue;
+}
+#about-grid main #kart iframe {
+  width: 100%;
+  height: 200px;
+}
 
 @media only screen and (min-width: 800px) {
+  /*Knappene*/
+  .yellow-button:hover { /*Brukte Kilde 8*/
+    background-color: #252525;
+    color: #e6bd43;
+  }
+  .black-white-button:hover { /*Brukte Kilde 8*/
+    background-color: #252525;
+    color: #e6bd43;
+  }
   /*Felles css for nav og footer*/
   header nav {
     display: flex;
@@ -361,6 +435,47 @@ a {
   }
   #our-services #article-kort #four {
     grid-area: "4";
+  }
+  #index-grid {
+    width: 100%;
+    max-width: 1600px;
+  }
+  #index-grid main #introduskjon h2 {
+    display: flex;
+    justify-content: center;
+  }
+  #index-grid main #introduskjon #introduksjons-tekst { /*Få mindre */
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+  #index-grid main #introduskjon article {
+    display: grid;
+    grid-template-areas: "bla boo";
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    padding: 2rem;
+  }
+  #index-grid main #introduskjon article img {
+    grid-area: bla;
+    justify-self: end;
+  }
+  #index-grid main #introduskjon article div {
+    grid-area: boo;
+    justify-self: start;
+  }
+  #index-grid main #introduskjon article div h3 {
+    text-align: left;
+  }
+  #index-grid main #introduskjon article div p {
+    text-align: left;
+  }
+  #index-grid main #introduskjon article div a {
+    display: flex;
+    align-self: left;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   #portofolio-grid {
     width: 100%;
@@ -426,8 +541,14 @@ a {
   }
   #about-grid #contact #send-us-m {
     grid-area: message;
+    margin: 1rem 1rem 1rem 3rem;
+    width: 80%;
+    justify-self: center;
   }
   #about-grid #contact #contact-info {
     grid-area: contact;
+    margin: 1rem 1rem 1rem 3rem;
+    width: 80%;
+    justify-self: center;
   }
 }/*# sourceMappingURL=style.css.map */
