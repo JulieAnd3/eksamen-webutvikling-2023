@@ -153,6 +153,9 @@ a{
             font-weight: bold;
             border-bottom: solid $gul;
         }
+        #video{
+            display:none;
+        }
         article{
             display:flex;
             align-items:center;
@@ -478,6 +481,10 @@ a{
 
 #index-grid{
     width:100%; max-width:1600px;
+    #video{
+        display:inline; 
+        position:absolute;
+    }
     main{
         #introduskjon{
             h2{

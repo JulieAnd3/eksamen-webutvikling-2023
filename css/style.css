@@ -147,6 +147,9 @@ a {
   font-weight: bold;
   border-bottom: solid #e6bd43;
 }
+#index-grid header #video {
+  display: none;
+}
 #index-grid header article {
   display: flex;
   align-items: center;
@@ -439,6 +442,10 @@ a {
   #index-grid {
     width: 100%;
     max-width: 1600px;
+  }
+  #index-grid #video {
+    display: inline;
+    position: absolute;
   }
   #index-grid main #introduskjon h2 {
     display: flex;
