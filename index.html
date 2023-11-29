@@ -3,42 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, inital-scale= 1.0">
-    <meta name="description" content="#">
-    <meta property="og:url" content="#">
+    <meta name="description" content="The frontpage for MountainDevelopment">
     <meta property="og:type" content="website">
-    <meta property="og:title"  content="#">
-    <meta property="og:description" content="#">
+    <meta property="og:title"  content="MountainDevelopment.no">
+    <meta property="og:description" content="The frontpage for MountainDevelopment">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>En nettside</title>
+    <link rel="icon" type="image/x-icon" href="/img/hoved-logo.png">
+    <!--Kilde 12-->
+    <title>Frontpage-MD</title>
 </head>
 <body>
     <div id="index-grid">
     <header id="header">
         <nav>
             <span>
-                <a href="index.html"><img src="img/hoved-logo.png" alt="Logo.Trykk for å komme til hovedsiden"></a> 
+                <a href="index.html"><img src="img/hoved-logo.png" alt="Logo bilde.Trykk for å komme til forsiden"></a> <!--Logoen er ikke pynt og kan brukes til navigerering. Derfor har jeg lagt til en forklaring på hva som skjer når brukeren trykker på bildet-->
              </span>
-            <ul>
-                <li><a href="index.html" id="home">Home</a></li>
-                <li><a href="portofolio.html" id="portofolio">Portofolio</a></li>
-                <li><a href="about.html" id="about">About</a></li>
-                <li><a href="about.html#contact" class="yellow-button">Contact</a></li> 
+            <ul role="menubar">
+                <li role="menuitem"><a href="index.html" id="home">Home</a></li>
+                <li role="menuitem"><a href="portofolio.html" id="portofolio">Portofolio</a></li>
+                <li role="menuitem"><a href="about.html" id="about">About</a></li>
+                <li role="menuitem"><a href="about.html#contact" class="yellow-button">Contact</a></li> 
             </ul>
         </nav>
-        <article>
-            <h1>Compeling headline</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id tristique orci. Nulla ac accumsan justo. Aliquam vel eros a dolor dapibus eleifend. Vivamus semper felis eget turpis fermentum hendreri</p>
-            <!--Fra kilde 5-->
-            <a href="#our-services" class="yellow-button">Read more about our services</a>
-            <video width="900px" autoplay muted id="video">
-                <source src="/img/mountains.mp4" type="video/mp4">
+        <section>
+            <video autoplay muted loop id="video">
+                <source src="mountains.mp4" type="video/mp4" id="video-test">
             Your browser don't support video.Video of paragliding in mountains
             </video>
-        </article>
+            <article>
+                <h1>Compeling headline</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id tristique orci. Nulla ac accumsan justo. Aliquam vel eros a dolor dapibus eleifend. Vivamus semper felis eget turpis fermentum hendreri</p>
+                <!--Fra kilde 5-->
+                <a href="#our-services" class="yellow-button" role="button">Read more about our services</a>
+            </article>
+        </section>
+
     </header>
     <main>
         <section id="introduskjon">
@@ -52,7 +56,7 @@
                     <!--Fra kilde 4-->
                     <p>Phasellus tempor nisl in libero viverra tincidunt. Curabitur vitae ultrices massa. Aenean ornare erat varius tristique ultricies. Maecenas id lorem nisi. Fusce ac enim ut ex pretium pulvinar. Vivamus pulvinar consequat lorem id auctor. Praesent cursus libero metus, ut dignissim augue blandit ut.</p>
                     <!--Fra kilde 5-->
-                    <a href="about.html" class="black-white-button">Read more about us</a>
+                    <a href="about.html" class="black-white-button" role="button">Read more about us</a>
                 </div>
             </article>
         </section>
@@ -93,7 +97,7 @@
             <h3>Sign up for our newsletter</h3>
             <form>
                 <input type="text" id="newsletter-sign-up">
-                <input type="submit" value="Sign me up" class="yellow-button">
+                <input type="submit" value="Sign me up" class="yellow-button" role="button">
             </form>
         </section>
      </main>
@@ -110,7 +114,7 @@
         </ul>
     </footer>
     <span id="arrow">
-        <a href="#header" id="opp-button"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#header" id="opp-button" role="button"><i class="fa-solid fa-arrow-up"></i></a>
     </span>
 </div>
 </body>

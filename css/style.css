@@ -1,6 +1,8 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /*Hentet fra kilde 11*/
 }
 
 /*Farger*/
@@ -443,9 +445,19 @@ a {
     width: 100%;
     max-width: 1600px;
   }
-  #index-grid #video {
-    display: inline;
+  #index-grid header section {
+    max-height: 300px; /*Få videoen mindre*/
+  }
+  #index-grid header section #video {
+    display: block;
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  #index-grid header section article {
     position: absolute;
+    background-image: none;
+    top: 150px;
   }
   #index-grid main #introduskjon h2 {
     display: flex;
@@ -484,6 +496,13 @@ a {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .porto-article {
+    transition: all 0.5s ease-in-out;
+  }
+  .porto-article:hover {
+    transform: scale(1.1);
+  }
+  /*Kilde 12*/
   #portofolio-grid {
     width: 100%;
     max-width: 1600px;

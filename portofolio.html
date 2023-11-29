@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, inital-scale= 1.0">
-    <meta name="description" content="#">
-    <meta property="og:url" content="#">
+    <meta name="viewport" content="width=device-width, inital-scale= 1.0">
+    <meta name="description" content="The portofolio page for MountainDevelopment">
     <meta property="og:type" content="website">
-    <meta property="og:title"  content="#">
-    <meta property="og:description" content="#">
+    <meta property="og:title"  content="MountainDevelopment.no">
+    <meta property="og:description" content="The portofolio page for MountainDevelopment">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>En nettside</title>
+    <link rel="icon" type="image/x-icon" href="/img/hoved-logo.png">
+    <!--Kilde 12-->
+    <title>Portofolio- MD</title>
 </head>
 <body>
     <div id="portofolio-grid">
     <header id="header">
         <nav>
             <span>
-                <a href="index.html"><img src="img/hoved-logo.png" alt="Logo.Trykk for å komme til hovedsiden"></a> 
+                <a href="index.html"><img src="img/hoved-logo.png" alt="Logo bilde.Trykk for å komme til forsiden"></a> <!--Logoen er ikke pynt og kan brukes til navigerering. Derfor har jeg lagt til en forklaring på hva som skjer når brukeren trykker på bildet-->
              </span>
-             <ul>
-                <li><a href="index.html" id="home">Home</a></li>
-                <li><a href="portofolio.html" id="portofolio">Portofolio</a></li>
-                <li><a href="about.html" id="about">About</a></li>
-                <li><a href="about.html#contact" class="yellow-button">Contact</a></li> 
+             <ul role="menubar">
+                <li role="menuitem"><a href="index.html" id="home">Home</a></li>
+                <li role="menuitem"><a href="portofolio.html" id="portofolio">Portofolio</a></li>
+                <li role="menuitem"><a href="about.html" id="about">About</a></li>
+                <li role="menuitem"><a href="about.html#contact" class="yellow-button">Contact</a></li> 
             </ul>
         </nav>
         <article>
@@ -37,27 +39,27 @@
      <section id="explore">
         <h3>Explore previous jobs</h3>
         <article> <!--Skal jeg heller bruke en div?-->
-            <a href="#branding" class="black-white-button">Branding</a>
-            <a href="#design" class="black-white-button">Design</a>
-            <a href="#development" class="black-white-button">Development</a>
+            <a href="#branding" class="black-white-button" role="button">Branding</a>
+            <a href="#design" class="black-white-button" role="button">Design</a>
+            <a href="#development" class="black-white-button" role="button">Development</a>
         </article>
     </section>
     <section class="porto-innhold" id="design">
         <h3>Design</h3>
         <div class="ok">
-            <article>
+            <article class="porto-article">
                 <img src="img/400x400.png" alt="placeholder bilde">
                 <!--Fra kilde 4-->
                 <h4>Maecenas pellentesque non sapien consequat vulputate</h4>
                 <!--Fra kilde 5-->
             </article>
-            <article>
+            <article class="porto-article">
                 <img src="img/400x400.png" alt="placeholder bilde">
                 <!--Fra kilde 4-->
                 <h4>Maecenas pellentesque non sapien consequat vulputate</h4>
                 <!--Fra kilde 5-->
             </article>
-            <article>
+            <article class="porto-article">
                 <img src="img/400x400.png" alt="placeholder bilde">
                 <!--Fra kilde 4-->
                 <h4>Maecenas pellentesque non sapien consequat vulputate</h4>
@@ -68,25 +70,25 @@
      <section class="porto-innhold" id="branding">
         <h3>Branding</h3>
         <div class="ok">
-            <article>
+            <article class="porto-article">
                 <img src="img/400x400.png" alt="placeholder bilde">
                 <!--Fra kilde 4-->
                 <h4>Maecenas pellentesque non sapien consequat vulputate</h4>
                 <!--Fra kilde 5-->
             </article>
-            <article>
+            <article class="porto-article">
                 <img src="img/400x400.png" alt="placeholder bilde">
                 <!--Fra kilde 4-->
                 <h4>Maecenas pellentesque non sapien consequat vulputate</h4>
                 <!--Fra kilde 5-->
             </article>
-            <article>
+            <article class="porto-article">
                 <img src="img/400x400.png" alt="placeholder bilde">
                 <!--Fra kilde 4-->
                 <h4>Maecenas pellentesque non sapien consequat vulputate</h4>
                 <!--Fra kilde 5-->
             </article>
-            <article>
+            <article class="porto-article">
                 <img src="img/400x400.png" alt="placeholder bilde">
                 <!--Fra kilde 4-->
                 <h4>Maecenas pellentesque non sapien consequat vulputate</h4>
@@ -97,13 +99,13 @@
      <section class="porto-innhold" id="development">
         <h3>Development</h3>
         <div class="ok">
-            <article>
+            <article class="porto-article">
                 <img src="img/400x400.png" alt="placeholder bilde">
                 <!--Fra kilde 4-->
                 <h4>Maecenas pellentesque non sapien consequat vulputate</h4>
                 <!--Fra kilde 5-->
             </article>
-            <article>
+            <article class="porto-article">
                 <img src="img/400x400.png" alt="placeholder bilde">
                 <!--Fra kilde 4-->
                 <h4>Maecenas pellentesque non sapien consequat vulputate</h4>
@@ -125,7 +127,7 @@
         </ul>
     </footer>
     <span id="arrow">
-        <a href="#header" id="opp-button"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#header" id="opp-button"  role="button"><i class="fa-solid fa-arrow-up"></i></a>
     </span>
 </div>
 </body>
