@@ -446,18 +446,26 @@ a {
     max-width: 1600px;
   }
   #index-grid header section {
-    max-height: 300px; /*Få videoen mindre*/
+    max-height: 300px;
   }
   #index-grid header section #video {
-    display: block;
+    display: inline;
     position: relative;
+    width: 100%;
     min-width: 100%;
-    max-width: 100%;
+    height: auto;
+    max-height: 300px;
   }
   #index-grid header section article {
     position: absolute;
     background-image: none;
     top: 150px;
+  }
+  #index-grid header section article h1 {
+    color: black;
+  }
+  #index-grid header section article p {
+    color: black;
   }
   #index-grid main #introduskjon h2 {
     display: flex;
@@ -502,7 +510,7 @@ a {
   .porto-article:hover {
     transform: scale(1.1);
   }
-  /*Kilde 12*/
+  /*Kilde 13*/
   #portofolio-grid {
     width: 100%;
     max-width: 1600px;

@@ -481,22 +481,31 @@ a{
     
     }
 }
-
 #index-grid{
     width:100%; max-width:1600px;
     header{
         section{
-            max-height:300px; /*Få videoen mindre*/
+            max-height:300px;
             #video{
-                display:block; 
+                display:inline; 
                 position:relative;
+                width:100%;
                 min-width:100%;
-                max-width:100%;
+                height:auto;
+                max-height:300px;
             }
             article{
                 position:absolute;
                 background-image: none;
                 top:150px;
+
+                h1{
+                    color:black;
+                }
+                p{
+                    color:black;
+                }
+
     
     
             }
@@ -552,7 +561,7 @@ a{
 .porto-article:hover{
     transform: scale(1.1); 
 }
-/*Kilde 12*/
+/*Kilde 13*/
 
 #portofolio-grid{
     width:100%; max-width:1600px;
